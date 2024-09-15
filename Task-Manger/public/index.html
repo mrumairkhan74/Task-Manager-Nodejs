@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="editForm" style="display: none;">
+      <h2>Edit Task</h2>
+      <form id="updateTaskForm">
+          <input type="hidden" id="editTaskId">
+          <input type="text" id="editTaskInput" placeholder="Update task" required>
+          <button type="submit">Update Task</button>
+          <button type="button" id="cancelEdit">Cancel</button>
+      </form>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
